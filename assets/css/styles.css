@@ -315,6 +315,119 @@ a {
 /* end of contact-page */
 
 /* footer */
+.main__footer {
+  position:relative;
+  bottom:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  padding:50px;
+  box-shadow: 0 0 10px #14274A;
+  background-color: #14274A;
+  height:300px;
+}
 
+.main__footer::before {
+  content:'';
+  position:absolute;
+  top:-35px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  background-color: #14274A;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  box-shadow: 0 0 10px #14274A;
+  width: 100px;
+  height: 35px;
+}
+
+.footer__item {
+  padding:10px;
+  color:white;
+  font-size:1rem;
+}
+
+.footer__item a {
+  color:white;
+  font-size:1rem;
+}
+
+.footer__item a:hover {
+  color: #D2AA55;
+}
+.footer--brand {
+  display:inline-flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom:15px;
+}
+
+.footer--brand > span {
+  clear:both;
+  letter-spacing: 4px;
+  font-size: 0.6rem;
+}
+
+.footer__links > li {
+  margin:15px 0;
+  font-weight:200;
+}
+
+.footer__social > li {
+  margin:15px 0;
+  font-weight:200;
+}
+
+.footer__social .fab {
+  margin-right:15px;
+}
+
+.subscribe__title {
+  font-size:1.1rem;
+  margin-bottom:20px;
+}
+
+.subscribe__form > input[type="email"]{
+  border:1px solid #E0B973;
+  line-height:1.2rem;
+  font-size:1rem;
+  padding:10px 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color:white;
+  max-width:60%;
+  height:40px;
+}
+
+.subscribe__form > input[type="email"]::placeholder {
+  color:#9d9d9d;
+}
+
+.subscribe__form > input[type="submit"]{
+  background-color:#E0B973;
+  color:#14274A;
+  line-height:1.2rem;
+  font-size:1rem;
+  padding:10px;
+  height:40px;
+  max-width:110px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-top: 1px;
+  margin-left: -5px;
+  cursor:pointer;
+}
+
+
+@media screen and (max-width: 850px) {
+  .main__footer {
+    height:400px;
+  }
+}
 /* end of footer */
 
