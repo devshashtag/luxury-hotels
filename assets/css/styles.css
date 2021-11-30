@@ -234,7 +234,111 @@ a {
 /* end of home-page cart */
 
 /* rooms-page cart */
+.rooms-main {
+  width: min(100%, 1124px);
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem 0;
+}
 
+.rooms-main h2,
+.rooms-main p
+{
+  text-shadow: 0 0.1rem 0.1rem rgba(20, 39, 74, 0.3);
+}
+
+.rooms__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.info__title {
+  color: var(--primary-color);
+}
+.info__text {
+  color: var(--primary-color);
+  text-align: center;
+  width: min(90%, 994px);
+}
+
+.cart {
+  margin: 2rem 0;
+}
+
+.cart__img {
+  width: 100%;
+  height: min(35vw, 526px);
+}
+.cart__title {
+  background: var(--primary-color);
+  color: var(--white-color-1);
+  text-align: center;
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+.cart__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  border-bottom: 0.1rem solid var(--primary-color);
+  border-left: 0.1rem solid var(--primary-color);
+  border-right: 0.1rem solid var(--primary-color);
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+.footer__link {
+  color: var(--primary-color);
+}
+.footer-icon {
+  display: inline-block;
+  color: var(--white-color-1);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.footer__price {
+  color: var(--white-color-1);
+  background-color: var(--secondary-color);
+  display: inline-block;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem 0;
+  color: var(--primary-color);
+}
+
+.testimonials-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.testimonial__btns button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--white-color-1);
+  padding: 0.25rem 1rem;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
 /* end of rooms-page cart */
 
 /* Facilities-page cart */
