@@ -93,7 +93,7 @@ a {
 /* end of global style */
 
 /* header */
-.main__header {
+.contact__header {
   position: relative;
   display:flex;
   flex-direction:column;
@@ -346,22 +346,22 @@ a {
 /* end of Facilities-page cart */
 
 /* contact-page */
-.main__content {
+.contact__main {
   min-height:100vh;
   padding: 0 50px;
   padding-top:100px;
 }
 
 @media screen and (min-width: 1000px) {
-  .main__content {
+  .contact__main {
     padding: 150px 100px;
     padding-bottom:100px;
   }
 }
 
-.content__header       { font-size: 1.4rem;    }
-.header--paragraph     { margin-top: 10px;     }
-.content__comments     {
+.contact__title     { font-size: 1.4rem;    }
+.contact__paragraph { margin-top: 10px;     }
+.contact__comments  {
   margin: 60px 0;
   display:flex;
   flex-direction:row;
