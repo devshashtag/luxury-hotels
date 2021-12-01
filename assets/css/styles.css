@@ -45,76 +45,9 @@ html {
   font-size: 62.5%;
 }
 
-/* ///////////// Responsive ////////////// */
 
-@media screen and (max-width: 1200px) {
-  .facilities {
-    padding: 0 4rem;
-  }
-
-  .facilities_places .image_container {
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-
-  .contact__main {
-    padding: 150px 100px;
-    padding-bottom: 100px;
-  }
-
-  .facilities_places .image_container .place_name h3 {
-    margin: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 52%;
-  }
-
-  .facilities_places .image_container .place_name h3 {
-    font-size: 2rem;
-    margin: 1rem;
-  }
-
-  .main__footer {
-    height: 400px;
-  }
-
-  .comments__form {
-    max-width: 100%;
-    margin: 50px auto;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .facilities .facilities_heading {
-    padding: 0 1rem;
-  }
-
-  .facilities .facilities_heading p {
-    text-align: justify;
-  }
-
-  .facilities_places .image_container .place_name h3 {
-    font-size: 1.5rem;
-    margin: 1rem;
-  }
-
-  .comments__form {
-    max-width: 100%;
-    margin: 50px auto;
-    width: 100%;
-  }
-}
-
-/* @media screen and (min-width: 576px) {
+/*
+@media screen and (min-width: 576px) {
   html {
     font-size: 0.812rem;
   }
@@ -334,7 +267,6 @@ a {
 .item--active {
   color: #D2AA55;
 }
-
 /** end of menu **/
 /** brand **/
 .header__brand {
@@ -367,7 +299,6 @@ a {
   letter-spacing: 4px;
   font-size: 0.6rem;
 }
-
 /** end of brand **/
 /** header title **/
 .contact__header__title {
@@ -380,7 +311,6 @@ a {
   align-items: center;
   font-size: 1.8rem;
 }
-
 /** end of header title **/
 /** extra **/
 .noselect {
@@ -398,7 +328,6 @@ a {
   /* Non-prefixed version, currently
   supported by Chrome, Edge, Opera and Firefox */
 }
-
 /** end of extra  **/
 /* end of header */
 
@@ -521,7 +450,6 @@ a {
   border-radius: 0.5rem;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
-
 /* end of rooms-page cart */
 
 /* Facilities-page cart */
@@ -807,5 +735,77 @@ a {
   margin-left: -5px;
   cursor: pointer;
 }
-
 /* end of footer */
+
+/* ///////////// Responsive ////////////// */
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .facilities {
+    padding: 0 4rem;
+  }
+
+  .facilities_places .image_container {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .contact__main {
+    padding: 150px 100px;
+    padding-bottom: 100px;
+  }
+
+  .facilities_places .image_container .place_name h3 {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+  .facilities_places .image_container .place_name h3 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  .main__footer {
+    height: 400px;
+  }
+
+  .comments__form {
+    max-width: 100%;
+    margin: 50px auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .facilities .facilities_heading {
+    padding: 0 1rem;
+  }
+
+  .facilities .facilities_heading p {
+    text-align: justify;
+  }
+
+  .facilities_places .image_container .place_name h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  .comments__form {
+    max-width: 100%;
+    margin: 50px auto;
+    width: 100%;
+  }
+}
