@@ -43,14 +43,12 @@ img {
 html {
   font-size: 62.5%;
 }
-section{
-  padding: 0 18rem;
-}
 /* facilities start */ 
 .facilities{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 18rem;
 }
 /* facilities_describe */
 .facilities .facilities_heading{
@@ -135,7 +133,7 @@ section{
 /* ///////////// Responsive ////////////// */
 
 @media screen and (max-width: 1200px) {
-  section{
+  .facilities{
     padding: 0 4rem;
   }
   .facilities_places .image_container{
