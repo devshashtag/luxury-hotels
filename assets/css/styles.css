@@ -173,6 +173,16 @@ a {
   align-items: center;
 
   box-shadow: 0 0 10px #14274A;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-clip: border-box;
+
+  height: 100vh;
 }
 
 .contact__header {
@@ -181,11 +191,15 @@ a {
 }
 
 .rooms__header {
-  background: url("../images/rooms/header.jpg") no-repeat;
-  background-size: cover;
-  background-clip: border-box;
+  background-image: url("../images/rooms/header.jpg");
+}
 
-  height: 100vh;
+.facilities__header {
+  background-image: url("../images/facilities/header.jpg");
+}
+
+.home__header {
+  background-image: url("../images/home/header.jpg");
 }
 
 /** header options **/
