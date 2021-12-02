@@ -644,7 +644,7 @@ a {
 .main__footer::before {
   content: '';
   position: absolute;
-  top: -35px;
+  top: -33px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -653,6 +653,7 @@ a {
   box-shadow: 0 0 10px #14274A;
   width: 100px;
   height: 35px;
+  z-index:1;
 }
 
 .footer__item {
