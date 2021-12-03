@@ -8,6 +8,15 @@
   --secondary-color: #e0b973;
   --white-color-1: #ffffff;
   --white-color-2: #f7f7f7;
+
+  /* header */
+  --header-title-color: #333333;
+
+  /* header menu */
+  --menu-items-color: #ffffff;
+  --menu-active-color: #ddfddd;
+  --menu-underline-color: #008080;
+  --menu-underline-size: 1px;
 }
 
 /* end of variables */
@@ -43,6 +52,11 @@ img {
 /* typographi */
 html {
   font-size: 62.5%;
+}
+
+
+.translated-rtl * {
+  letter-spacing:0 !important;
 }
 
 
@@ -99,7 +113,6 @@ a {
 /* header */
 .main__header {
   position: relative;
-  color: white;
 
   display: flex;
   flex-direction: column;
@@ -115,6 +128,7 @@ a {
   background-position:center center;
   background-clip: border-box;
 
+  color: white;
   height: 100vh;
 }
 
@@ -143,24 +157,29 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  word-spacing: .2rem;
 }
 
 .title--mid {
-  font-size: 1.2rem;
-  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+
 }
 
 .title--big {
-  font-size: 4rem;
+  font-size: 8rem;
   letter-spacing: 0.2rem;
+  text-shadow:2px 2px 5px var(--header-title-color);
+  font-weight:bold;
 }
 
 .title--space {
-  font-size: 1.9rem;
-  letter-spacing: 0.4rem;
-  line-height: 3rem;
+  font-size: 3rem;
+  letter-spacing: 2rem;
+  text-shadow:2px 2px 5px var(--header-title-color);
+  margin-bottom:.5rem;
 }
 
 .header__options {
@@ -169,13 +188,17 @@ a {
 }
 
 .options__btn {
-  color: var(--white-color-1);
-  padding: 10px 20px;
-  background-color: #E0B973;
+  color: var(--white-color-2);
+  padding: 1rem 2rem;
+  background-color: #d0a973;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.options__btn:hover {
+  box-shadow:0 0 4px #f0e9a3;
 }
 
 .options__scroll {
@@ -183,18 +206,18 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
-  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
 }
 
 .options__scroll button {
   display: inline-block;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
 
   background-color: var(--white-color-1);
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-top: 10px;
   border-radius: 50%;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
@@ -207,20 +230,21 @@ a {
   display: flex;
   justify-content: right;
   line-height: 1.5;
-  width: 80%;
+  width: 90vw;
   z-index: 1;
 }
 
-.header__menu>li {
+.header__menu > li {
   list-style-type: none;
-  margin: 20px 15px;
+  margin: 3rem 2rem;
 }
 
 .menu__item {
   text-decoration: none;
   position: relative;
-  font-size: 1.2rem;
-  color: white;
+  font-size: 1.6rem;
+  font-weight:200;
+  color: var(--menu-items-color);
 }
 
 .menu__item::before {
@@ -232,11 +256,9 @@ a {
   left: 0;
   margin: 0 auto;
 
-  box-shadow: 0 -15px 10px #D2AA55;
-  border-radius: 100%;
-  background-color: #9D9D9D;
+  background-color: var(--menu-underline-color);
 
-  height: 1px;
+  height: var(--menu-underline-size);
   width: 0;
 }
 
@@ -246,7 +268,7 @@ a {
 
 @keyframes expand {
   0% {
-    width: 50%;
+    width: 0;
     bottom: -10px;
   }
 
@@ -261,12 +283,13 @@ a {
 }
 
 .menu__item:not(.item--active):hover {
-  color: #D2AA55;
+  color: var(--menu-active-color);
 }
 
 .item--active {
-  color: #D2AA55;
+  color: var(--menu-active-color);
 }
+
 /** end of menu **/
 /** brand **/
 .header__brand {
@@ -276,8 +299,8 @@ a {
   background-color: #E0B973;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  height: 70px;
-  width: 130px;
+  height: 7rem;
+  width: 13rem;
 }
 
 .brand__text {
@@ -286,18 +309,18 @@ a {
   justify-content: center;
   align-items: center;
   color: #14274A;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight:bold;
+  letter-spacing: 3px;
   height: 100%;
   width: 100%;
+  gap:.2rem;
 }
 
-.brand__text>span {
-  clear: both;
+.brand__text > span {
   color: #14274A;
-  bottom: 0px;
   letter-spacing: 4px;
-  font-size: 0.6rem;
+  font-size: .9rem;
 }
 /** end of brand **/
 /** header title **/
@@ -784,9 +807,9 @@ a {
   }
 
   .comments__form {
-    max-width: 100%;
+    max-width: 90vw;
     margin: 50px auto;
-    width: 100%;
+    width: 90vw;
   }
 }
 
@@ -805,8 +828,8 @@ a {
   }
 
   .comments__form {
-    max-width: 100%;
+    max-width: 90vw;
     margin: 50px auto;
-    width: 100%;
+    width: 90vw;
   }
 }
