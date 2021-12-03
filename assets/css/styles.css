@@ -17,6 +17,9 @@
   --menu-active-color: #ddfddd;
   --menu-underline-color: #008080;
   --menu-underline-size: 1px;
+
+  /* contact-us form */
+  --contact-form-text-border: #00aa9a;
 }
 
 /* end of variables */
@@ -580,45 +583,49 @@ a {
 /* contact-page */
 .contact__main {
   min-height: 100vh;
-  padding: 0 50px;
-  padding-top: 100px;
+  padding: 0 7rem;
+  padding-top: 7rem;;
 }
 
 
 .contact__title {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .contact__paragraph {
-  margin-top: 10px;
+  font-size:1.8rem;
+  margin-top: 1rem;
 }
 
 .contact__comments {
-  margin: 60px 0;
+  margin: 4rem 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
+  align-content:center;
   flex-wrap: wrap;
+  gap:5rem;
 }
 
 .comments__info {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  flex:1;
 }
 
-.comments__info>span {
+.comments__info > span {
   font-weight: bold;
 }
 
 .comments__form {
   display: flex;
   flex-direction: column;
+  justify-content:center;
   align-items: end;
-  min-width: 300px;
-  max-width: 400px;
-  width: 400px;
+  min-width: 40rem;
+  max-width: 100vw;
+  flex:1;
 }
-
 
 .comments__form>input:not([type="submit"]),
 .comments__form>#message {
@@ -626,26 +633,42 @@ a {
   width: 100%;
   border: 1px solid #9D9D9D;
   padding: 5px;
-  line-height: 1.6rem;
+  line-height: 2rem;
   color: #25242a;
   margin-bottom: 10px;
   resize: none;
 }
 
+.comments__form>input:not([type="submit"]):focus,
+.comments__form>#message:focus {
+  border: 1px solid  var(--contact-form-text-border);
+  box-shadow: 0 0 4px var(--contact-form-text-border) inset;
+  border-radius:2px;
+}
+
+
 .comments__form>label {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  font-size:1.5rem;
   width: 100%;
   text-align: left;
 }
 
 .comments__form>#submit {
   background-color: #E0B973;
-  width: 100px;
+  width: 10rem;
   padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
+  font-size:1.6rem;
   color: #14274A;
   cursor: pointer;
+}
+
+.comments__form>#submit:hover {
+  box-shadow:0 0 4px #a08953;
+  color:white;
+  font-weight:bold;
 }
 /* end of contact-page */
 
@@ -782,11 +805,6 @@ a {
     font-size: 55%;
   }
 
-  .contact__main {
-    padding: 150px 100px;
-    padding-bottom: 100px;
-  }
-
   .facilities_places .image_container .place_name h3 {
     margin: 1rem;
   }
@@ -802,15 +820,6 @@ a {
     margin: 1rem;
   }
 
-  .main__footer {
-    height: 400px;
-  }
-
-  .comments__form {
-    max-width: 90vw;
-    margin: 50px auto;
-    width: 90vw;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -827,9 +836,9 @@ a {
     margin: 1rem;
   }
 
+  /* contact-us form */
   .comments__form {
-    max-width: 90vw;
-    margin: 50px auto;
-    width: 90vw;
+    min-width: 30rem;
   }
+
 }
