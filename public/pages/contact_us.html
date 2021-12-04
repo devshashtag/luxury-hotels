@@ -47,12 +47,12 @@
       </div>
       <form class="comments__form" action="" method="post" accept-charset="utf-8">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <input class="cmt__form--name" type="text" name="name" id="name" />
         <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" />
+        <input class="cmt__form--email" type="email" name="email" id="email" />
         <label for="message">Message</label>
-        <textarea name="message" id="message" rows="8" cols="40"></textarea>
-        <input type="submit" name="submit" id="submit" value="submit" />
+        <textarea class="cmt__form--msg"  name="message" id="message" rows="14" cols="30"></textarea>
+        <input class="cmt__form--submit" type="submit" name="submit" id="submit" value="submit" />
       </form>
     </div>
   </div>
@@ -80,8 +80,8 @@
     <div class="footer__item footer__subscribe">
       <p class="subscribe__title">Subscribe to our newsletter</p>
       <form class="subscribe__form">
-        <input type="email" name="email" placeholder="Email Address">
-        <input type="submit" value="Subscribe">
+        <input class="sub__form--email" type="email" name="email" placeholder="Email Address" required>
+        <input class="sub__form--submit" type="submit" value="OK">
       </form>
     </div>
   </div>
