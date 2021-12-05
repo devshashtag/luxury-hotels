@@ -12,11 +12,16 @@
   /* header */
   --header-title-color: #333333;
 
-  /* header menu */
-  --menu-items-color: #ffffff;
-  --menu-active-color: #ddfddd;
-  --menu-underline-color: #008080;
-  --menu-underline-size: 1px;
+
+  /* header navbar */
+  --nav-items-color: #ffffff;
+  --nav-active-color: #ddfddd;
+  --nav-underline-color: #008080;
+  --nav-underline-size: 1px;
+
+  --nav-toggle-bg: #00bb98;
+  --nav-list-bg:#080c3be0;
+  --nav-list-active-fg: #88ffff;
 
   /* contact-us form */
   --contact-form-text-border: #9D9D9D;
@@ -176,7 +181,6 @@ a {
 .title--mid {
   font-size: 2rem;
   letter-spacing: 1rem;
-
 }
 
 .title--big {
@@ -235,45 +239,86 @@ a {
 }
 
 /** end of header options **/
-/** menu **/
-.header__menu {
-  position: absolute;
+/** header navbar **/
+.header__navbar {
+  display:flex;
+  flex-direction:column;
+  justify-content:right;
+  align-items:flex-end;
+  width: 90vw;
+}
+
+/*** nav toggle ***/
+.nav__toggle {
+  position:relative;
+  cursor: pointer;
+  display:none;
+  flex-direction:column;
+  margin:1rem 2rem;
+  padding:1rem;
+  z-index: 2;
+  gap:4px;
+  margin-bottom:2.2rem;
+}
+
+.toggle__bar--top,
+.toggle__bar--mid,
+.toggle__bar--btm {
+  width: 30px;
+  height: 3px;
+  background-color: var(--nav-toggle-bg);
+}
+
+.on > .toggle__bar--top {
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+  transform: rotate(-40deg) translate(-5px, 5px);
+}
+
+.on > .toggle__bar--mid {
+  opacity: 0;
+}
+
+.on > .toggle__bar--btm {
+  -webkit-transform: rotate(45deg) translate(-8px, -7px);
+  transform: rotate(40deg) translate(-5px, -5px);
+}
+
+/*** end nav toggle ***/
+/*** nav list ***/
+.nav__list {
   display: flex;
   justify-content: right;
+  align-items:center;
   line-height: 1.5;
+  overflow: hidden;
+  padding: 2rem;
   width: 90vw;
   z-index: 1;
+  gap:3rem;
 }
 
-.header__menu > li {
-  list-style-type: none;
-  margin: 3rem 2rem;
-}
-
-.menu__item {
-  text-decoration: none;
+.nav__item {
   position: relative;
   font-size: 1.6rem;
   font-weight:200;
-  color: var(--menu-items-color);
+  color: var(--nav-items-color);
 }
 
-.menu__item::before {
+.nav__item::before {
   content: '';
-
   position: absolute;
   bottom: -5px;
   right: 0;
   left: 0;
   margin: 0 auto;
 
-  background-color: var(--menu-underline-color);
+  background-color: var(--nav-underline-color);
 
-  height: var(--menu-underline-size);
+  height: var(--nav-underline-size);
   width: 0;
 }
 
-.menu__item:not(.item--active):hover::before {
+.nav__item:not(.item--active):hover::before {
   animation: expand 0.1s ease 0s 1 normal forwards;
 }
 
@@ -293,15 +338,16 @@ a {
   width: 100%;
 }
 
-.menu__item:not(.item--active):hover {
-  color: var(--menu-active-color);
+.nav__item:not(.item--active):hover {
+  color: var(--nav-active-color);
 }
 
 .item--active {
-  color: var(--menu-active-color);
+  color: var(--nav-active-color);
+  pointer-events: none;
 }
-
-/** end of menu **/
+/*** end of nav list ***/
+/** end of header navbar **/
 /** brand **/
 .header__brand {
   position: absolute;
@@ -851,6 +897,55 @@ a {
     padding: 5rem 4rem;
   }
 
+  /* header navbar */
+  .nav__toggle {
+    display:flex;
+  }
+
+  .nav__list {
+    flex-direction:column;
+    overflow:hidden;
+    transform:translateY(-100vh);
+    z-index:-1;
+  }
+
+  .show .item--active {
+    font-weight:bold;
+    color:var(--nav-list-active-fg);
+  }
+
+  .show .nav__item:before {
+    display:none;
+  }
+
+  /** navbar list for toggle **/
+  .nav__list.show {
+    display: flex;
+    transform:translateY(0vh);
+    background-color: var(--nav-list-bg);
+    border-radius:2rem;
+    z-index:1;
+  }
+
+  .nav__list.show > li {
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+
+  .show .nav__item {
+    display:block;
+    width:50%;
+    font-size: 2rem;
+    text-align:center;
+    padding:10px 5px;
+  }
+
+  :root {
+    --nav-active-color:yellow;
+  }
+  /** end of navbar list for toggle **/
+  /* end of header navbar */
 }
 
 @media screen and (max-width: 450px) {
@@ -866,14 +961,4 @@ a {
     font-size: 1.5rem;
     margin: 1rem;
   }
-
-  /* contact-us form */
-  .comments__form {
-    min-width: 30rem;
-  }
-
-  .contact__main {
-    padding: 5rem 4rem;
-  }
-
 }
