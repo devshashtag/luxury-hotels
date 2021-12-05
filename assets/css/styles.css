@@ -11,7 +11,7 @@
 
   /* header */
   --header-title-color: #333333;
-  --header-brand-bg: #E0B973;
+  --header-brand-bg: #e0b973;
   --header-brand-bg-sml: #1f2f31aa;
   --header-brand-fg-sml: #dfeff1;
 
@@ -23,18 +23,18 @@
 
   --nav-toggle-bg: #afdfe1;
   --nav-list-bg: #1f2f31cd;
-  --nav-list-border:#2e4b5e;
+  --nav-list-border: #2e4b5e;
   --nav-list-active-fg: #88ffff;
 
   /* contact-us form */
-  --contact-form-text-border: #9D9D9D;
+  --contact-form-text-border: #9d9d9d;
 
   /* footer */
   --footer-link-color: var(--white-color-2);
   --footer-link-hover-color: #00eded;
   --footer-sub-valid-bg: #aaeeaa;
   --footer-sub-invalid-bg: #eeaaaa;
-  --footer-sub-text-fg: #14274A;
+  --footer-sub-text-fg: #14274a;
   --footer-sub-border: #00aa9a;
 }
 
@@ -73,11 +73,9 @@ html {
   font-size: 62.5%;
 }
 
-
 .translated-rtl * {
-  letter-spacing:0 !important;
+  letter-spacing: 0 !important;
 }
-
 
 /*
 @media screen and (min-width: 576px) {
@@ -137,14 +135,14 @@ a {
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0 0 10px #14274A;
+  box-shadow: 0 0 10px #14274a;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center center;
+  background-position: center center;
   background-clip: border-box;
 
   color: white;
@@ -152,7 +150,7 @@ a {
 }
 
 .contact__header {
-  background-color: #14274A;
+  background-color: #14274a;
   height: 40vh;
 }
 
@@ -178,7 +176,7 @@ a {
   justify-content: center;
   font-size: 1.5rem;
   letter-spacing: 1.5px;
-  word-spacing: .2rem;
+  word-spacing: 0.2rem;
 }
 
 .title--mid {
@@ -189,15 +187,15 @@ a {
 .title--big {
   font-size: 8rem;
   letter-spacing: 0.2rem;
-  text-shadow:2px 2px 5px var(--header-title-color);
-  font-weight:bold;
+  text-shadow: 2px 2px 5px var(--header-title-color);
+  font-weight: bold;
 }
 
 .title--space {
   font-size: 3rem;
   letter-spacing: 2rem;
-  text-shadow:2px 2px 5px var(--header-title-color);
-  margin-bottom:.5rem;
+  text-shadow: 2px 2px 5px var(--header-title-color);
+  margin-bottom: 0.5rem;
 }
 
 .header__options {
@@ -216,7 +214,7 @@ a {
 }
 
 .options__btn:hover {
-  box-shadow:0 0 4px #f0e9a3;
+  box-shadow: 0 0 4px #f0e9a3;
 }
 
 .options__scroll {
@@ -244,24 +242,24 @@ a {
 /** end of header options **/
 /** header navbar **/
 .header__navbar {
-  display:flex;
-  flex-direction:column;
-  justify-content:right;
-  align-items:flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
   width: 90vw;
 }
 
 /*** nav toggle ***/
 .nav__toggle {
-  position:relative;
+  position: relative;
   cursor: pointer;
-  display:none;
-  flex-direction:column;
-  margin:1rem 2rem;
-  padding:1rem;
+  display: none;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  padding: 1rem;
   z-index: 2;
-  gap:4px;
-  margin-bottom:1.9rem;
+  gap: 4px;
+  margin-bottom: 1.9rem;
 }
 
 .toggle__bar--top,
@@ -291,24 +289,24 @@ a {
 .nav__list {
   display: flex;
   justify-content: right;
-  align-items:center;
+  align-items: center;
   line-height: 1.5;
   overflow: hidden;
   padding: 2rem;
   width: 90vw;
   z-index: 1;
-  gap:3rem;
+  gap: 3rem;
 }
 
 .nav__item {
   position: relative;
   font-size: 1.6rem;
-  font-weight:200;
+  font-weight: 200;
   color: var(--nav-items-color);
 }
 
 .nav__item::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   right: 0;
@@ -368,17 +366,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #14274A;
+  color: #14274a;
   font-size: 1.5rem;
-  font-weight:bold;
+  font-weight: bold;
   letter-spacing: 3px;
   height: 100%;
-  gap:.2rem;
+  gap: 0.2rem;
 }
 
 .brand__text > span {
   letter-spacing: 4px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 /** end of brand **/
 /** header title **/
@@ -423,7 +421,7 @@ a {
 /* rooms-page cart */
 .rooms-main {
   width: min(100%, 1124px);
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
@@ -432,7 +430,7 @@ a {
 
 .rooms-main h2,
 .rooms-main p {
-  text-shadow: 0 0.1rem 0.1rem rgba(20, 39, 74, 0.3);
+  text-shadow: 0 0.2rem 0.2rem rgba(20, 39, 74, 0.3);
 }
 
 .rooms__info {
@@ -444,17 +442,19 @@ a {
 }
 
 .info__title {
+  font-size: 3rem;
   color: var(--primary-color);
 }
 
 .info__text {
+  font-size: 1.8rem;
   color: var(--primary-color);
   text-align: center;
   width: min(90%, 994px);
 }
 
 .cart {
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 
 .cart__img {
@@ -466,8 +466,8 @@ a {
   background: var(--primary-color);
   color: var(--white-color-1);
   text-align: center;
-  font-size: 2rem;
-  padding: 1.2rem;
+  font-size: 2.5rem;
+  padding: 1.5rem;
 }
 
 .cart__footer {
@@ -486,21 +486,26 @@ a {
   color: var(--primary-color);
 }
 
+.cart__footer a {
+  font-size: 1.35rem;
+}
+
 .footer-icon {
   display: inline-block;
   color: var(--white-color-1);
   background-color: var(--secondary-color);
   border-radius: 50%;
   padding: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-right: 0.5rem;
 }
 
 .footer__price {
   color: var(--white-color-1);
   background-color: var(--secondary-color);
+  font-size: 1.3rem;
   display: inline-block;
-  padding: 0.5rem 0.7rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.5rem;
 }
 
@@ -509,15 +514,21 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem 0;
+  gap: 2rem 0;
   color: var(--primary-color);
+  margin-bottom: 5rem;
+}
+
+.testimonial__title {
+  font-size: 2.8rem;
 }
 
 .testimonials-content {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
+  font-size: 1.5rem;
 }
 
 .testimonial__btns button {
@@ -627,9 +638,9 @@ a {
 .facilities_testimonials .icons .fas {
   background: #e0b973;
   color: #fff;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   font-size: 1.8rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
@@ -646,7 +657,7 @@ a {
 }
 
 .contact__paragraph {
-  font-size:1.8rem;
+  font-size: 1.8rem;
   margin-top: 1rem;
 }
 
@@ -656,14 +667,14 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: start;
-  align-content:center;
+  align-content: center;
   flex-wrap: wrap;
-  gap:5rem;
+  gap: 5rem;
 }
 
 .comments__info {
   font-size: 1.8rem;
-  flex:1;
+  flex: 1;
 }
 
 .comments__info > span {
@@ -673,12 +684,12 @@ a {
 .comments__form {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: end;
   min-width: 40rem;
   max-width: 100vw;
-  flex:1;
-  gap:1.5rem;
+  flex: 1;
+  gap: 1.5rem;
 }
 
 .cmt__form--name,
@@ -686,35 +697,35 @@ a {
 .cmt__form--msg {
   display: block;
   width: 100%;
-  border:1px solid var(--contact-form-text-border);
+  border: 1px solid var(--contact-form-text-border);
   padding: 7px 10px;
   border-radius: 1px;
-  font-size:1.3rem;
+  font-size: 1.3rem;
   resize: none;
 }
 
 .comments__form > label {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   width: 100%;
   text-align: left;
-  margin-bottom:-1rem;
+  margin-bottom: -1rem;
 }
 
 .cmt__form--submit {
-  background-color: #E0B973;
+  background-color: #e0b973;
   width: 10rem;
   padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
-  font-size:1.6rem;
-  color: #14274A;
+  font-size: 1.6rem;
+  color: #14274a;
   cursor: pointer;
 }
 
 .cmt__form--submit:hover {
-  box-shadow:0 0 4px #a08953;
-  color:white;
-  font-weight:bold;
+  box-shadow: 0 0 4px #a08953;
+  color: white;
+  font-weight: bold;
 }
 /* end of contact-page */
 
@@ -726,28 +737,28 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-content:center;
+  align-content: center;
   flex-wrap: wrap;
   padding: 5rem;
-  box-shadow: 0 0 10px #14274A;
-  background-color: #14274A;
+  box-shadow: 0 0 10px #14274a;
+  background-color: #14274a;
   min-height: 300px;
-  gap:3rem;
+  gap: 3rem;
 }
 
 .main__footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -33px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-color: #14274A;
+  background-color: #14274a;
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  box-shadow: 0 0 10px #14274A;
+  box-shadow: 0 0 10px #14274a;
   width: 100px;
   height: 35px;
-  z-index:1;
+  z-index: 1;
 }
 
 .footer__item {
@@ -758,7 +769,7 @@ a {
 .footer__item a {
   color: var(--footer-link-color);
   font-size: 1.5rem;
-  transition:0;
+  transition: 0;
 }
 
 .footer__item a:hover {
@@ -775,14 +786,14 @@ a {
   margin-bottom: 2rem;
 }
 
-.footer--brand>span {
+.footer--brand > span {
   clear: both;
   letter-spacing: 4px;
   font-size: 1rem;
 }
 
-.footer__links>li,
-.footer__social>li {
+.footer__links > li,
+.footer__social > li {
   margin: 2rem 0;
   font-weight: 100;
 }
@@ -790,7 +801,6 @@ a {
 .footer__social .fab {
   margin-right: 1.2rem;
 }
-
 
 .subscribe__title {
   font-size: 1.5rem;
@@ -802,7 +812,7 @@ a {
   color: white;
   font-size: 1.5rem;
   padding: 10px 15px;
-  border: 1px solid #E0B973;
+  border: 1px solid #e0b973;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   height: 4rem;
@@ -820,18 +830,18 @@ a {
   border: 1px solid var(--footer-sub-valid-bg);
 }
 
-.sub__form--email:focus:invalid:not(:placeholder-shown){
+.sub__form--email:focus:invalid:not(:placeholder-shown) {
   border: 1px solid var(--footer-sub-invalid-bg);
 }
 /** end of sub form email **/
 /** sub form submit **/
 .sub__form--submit {
-  background-color: #E0B973;
+  background-color: #e0b973;
   color: var(--footer-sub-text-fg);
   font-size: 1.5rem;
   padding: 5px 30px;
-  margin-left:-1rem;
-  font-weight:bold;
+  margin-left: -1rem;
+  font-weight: bold;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   height: 4rem;
@@ -840,17 +850,17 @@ a {
 
 .sub__form--email:focus + .sub__form--submit,
 .sub__form--submit:hover {
-  background-color:var(--footer-sub-border);
+  background-color: var(--footer-sub-border);
   box-shadow: 0 0 10px var(--footer-sub-border);
 }
 
 .sub__form--email:focus:invalid:not(:placeholder-shown) + .sub__form--submit {
-  background-color:var(--footer-sub-invalid-bg);
+  background-color: var(--footer-sub-invalid-bg);
   box-shadow: 0 0 10px var(--footer-sub-invalid-bg);
 }
 
-.sub__form--email:focus:valid:not(:placeholder-shown) + .sub__form--submit{
-  background-color:var(--footer-sub-valid-bg);
+.sub__form--email:focus:valid:not(:placeholder-shown) + .sub__form--submit {
+  background-color: var(--footer-sub-valid-bg);
   box-shadow: 0 0 10px var(--footer-sub-valid-bg);
 }
 /** end of sub form submit **/
@@ -900,71 +910,71 @@ a {
 
   /* header navbar */
   .header__navbar {
-    width:100%;
+    width: 100%;
   }
 
   .header__brand {
     background-color: var(--header-brand-bg-sml);
-    position:absolute;
-    left:0;
-    right:0;
-    width:100%;
-    margin:0;
-    border-radius:0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
 
   .brand__text {
-    display:inline-flex;
+    display: inline-flex;
     margin: 0 4rem;
-    color:var(--header-brand-fg-sml);
+    color: var(--header-brand-fg-sml);
   }
   /* navbar */
   /** navbar list for toggle **/
   .nav__toggle {
-    display:flex;
+    display: flex;
   }
 
   .nav__list.show {
-    display:flex;
+    display: flex;
     background-color: var(--nav-list-bg);
   }
 
   .nav__list {
-    display:none;
-    flex-direction:column;
-    width:100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
   }
 
   .nav__item {
-    display:block;
-    width:50%;
+    display: block;
+    width: 50%;
     font-size: 2rem;
-    text-align:center;
-    padding:10px 5px;
+    text-align: center;
+    padding: 10px 5px;
   }
 
   .nav__list > li {
-    width:100%;
-    display:flex;
-    justify-content:center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .item--active {
-    font-weight:bold;
-    color:var(--nav-list-active-fg);
+    font-weight: bold;
+    color: var(--nav-list-active-fg);
   }
 
   .nav__item:before {
-    display:none;
+    display: none;
   }
 
   /** end of navbar list for toggle **/
   .contact__header {
-    height:50vh;
+    height: 50vh;
   }
 
   :root {
-    --nav-active-color:#f7bc4d;
+    --nav-active-color: #f7bc4d;
   }
 
   /* end of navbar */
