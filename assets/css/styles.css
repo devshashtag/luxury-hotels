@@ -933,9 +933,13 @@ a {
   :root {
     --nav-active-color: #f7bc4d;
   }
-
-  /* end of navbar */
   /* end of header navbar */
+
+  /* testimonials  */
+  .testimonials h3 {
+    font-size: 1.7rem;
+  }
+  /* end of testimonials*/
 }
 
 @media screen and (max-width: 450px) {
@@ -951,4 +955,10 @@ a {
     font-size: 1.5rem;
     margin: 1rem;
   }
+
+  /* testimonials  */
+  .testimonials h3 {
+    font-size: 1.5rem;
+  }
+  /* end of testimonials*/
 }
