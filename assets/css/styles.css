@@ -239,7 +239,6 @@ a {
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
 
-/** end of header options **/
 /** header navbar **/
 .header__navbar {
   display: flex;
@@ -284,7 +283,6 @@ a {
   transform: rotate(40deg) translate(-5px, -5px);
 }
 
-/*** end nav toggle ***/
 /*** nav list ***/
 .nav__list {
   display: flex;
@@ -347,8 +345,6 @@ a {
   color: var(--nav-active-color);
   pointer-events: none;
 }
-/*** end of nav list ***/
-/** end of header navbar **/
 /** brand **/
 .header__brand {
   position: absolute;
@@ -378,7 +374,7 @@ a {
   letter-spacing: 4px;
   font-size: 0.9rem;
 }
-/** end of brand **/
+
 /** header title **/
 .contact__header__title {
   position: absolute;
@@ -390,7 +386,6 @@ a {
   align-items: center;
   font-size: 1.8rem;
 }
-/** end of header title **/
 /** extra **/
 .noselect {
   -webkit-touch-callout: none;
@@ -407,7 +402,6 @@ a {
   /* Non-prefixed version, currently
   supported by Chrome, Edge, Opera and Firefox */
 }
-/** end of extra  **/
 /* end of header */
 
 /* navbar */
@@ -508,40 +502,6 @@ a {
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
 }
-
-.testimonial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem 0;
-  color: var(--primary-color);
-  margin-bottom: 5rem;
-}
-
-.testimonial__title {
-  font-size: 2.8rem;
-}
-
-.testimonials-content {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-size: 1.5rem;
-}
-
-.testimonial__btns button {
-  cursor: pointer;
-  display: inline-block;
-  background-color: var(--secondary-color);
-  color: var(--white-color-1);
-  padding: 0.25rem 1rem;
-  font-size: 2rem;
-  margin: 0 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-}
 /* end of rooms-page cart */
 
 /* Facilities-page cart */
@@ -602,48 +562,6 @@ a {
   font-family: sans-serif;
   color: #14274a;
 }
-
-/* facilities_testimonials */
-.facilities_testimonials {
-  text-align: center;
-  color: #14274a;
-  margin-bottom: 6rem;
-}
-
-.facilities_testimonials h2 {
-  font-size: 3.3rem;
-  text-transform: capitalize;
-  margin: 6rem 0 2rem;
-}
-
-.facilities_testimonials h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: sans-serif;
-}
-
-.facilities_testimonials p {
-  font-size: 1.8rem;
-  font-family: sans-serif;
-  margin-bottom: 1rem;
-}
-
-.facilities_testimonials .icons {
-  margin: 0 46%;
-  display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
-}
-
-.facilities_testimonials .icons .fas {
-  background: #e0b973;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  font-size: 1.8rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
 /* end of Facilities-page cart */
 
 /* contact-page */
@@ -728,6 +646,48 @@ a {
   font-weight: bold;
 }
 /* end of contact-page */
+
+/* testimonial */
+ .testimonials {
+   text-align: center;
+   color: #14274a;
+   margin-bottom: 6rem;
+ }
+
+ .testimonials h2 {
+   font-size: 3.3rem;
+   text-transform: capitalize;
+   margin: 6rem 0 2rem;
+ }
+
+ .testimonials h3 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   font-family: sans-serif;
+ }
+
+ .testimonials p {
+   font-size: 1.8rem;
+   font-family: sans-serif;
+   margin-bottom: 1rem;
+ }
+
+ .testimonials .icons {
+   margin: 0 46%;
+   display: flex;
+   justify-content: space-around;
+   gap: 1.5rem;
+ }
+
+ .testimonials .icons .fas {
+   background: #e0b973;
+   color: #fff;
+   padding: 0.6rem 1rem;
+   font-size: 1.8rem;
+   border-radius: 0.5rem;
+   cursor: pointer;
+ }
+/* end of testimonial */
 
 /* footer */
 .main__footer {
@@ -833,7 +793,6 @@ a {
 .sub__form--email:focus:invalid:not(:placeholder-shown) {
   border: 1px solid var(--footer-sub-invalid-bg);
 }
-/** end of sub form email **/
 /** sub form submit **/
 .sub__form--submit {
   background-color: #e0b973;
@@ -863,8 +822,6 @@ a {
   background-color: var(--footer-sub-valid-bg);
   box-shadow: 0 0 10px var(--footer-sub-valid-bg);
 }
-/** end of sub form submit **/
-
 /* end of footer */
 
 /* ///////////// Responsive ////////////// */
