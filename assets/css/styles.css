@@ -31,10 +31,10 @@ ul {
   list-style-type: none;
 }
 
-img {
+/*img {
   width: 100%;
   height: 100%;
-}
+}*/
 
 /* end of reset styles */
 
@@ -62,6 +62,9 @@ html {
   html {
     font-size: 1rem;
   }
+  home{
+    display: block;
+  }
 }
 
 h1 {
@@ -83,7 +86,7 @@ p {
   font-size: 1.3rem;
 }
 a {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 /* end of typographi */
@@ -101,6 +104,68 @@ a {
 /* end of navbar */
 
 /* home-page cart */
+.home{
+   margin-top: 10px;
+}
+
+.home-title{
+  color: #3f506c;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.home-page, .home-page2{
+  display: flex;
+}
+
+.home-top-text-main, .home-bottom-text-main {
+  flex-basis: 50%;
+  padding-left: 150px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.home-top-title, .home-bottom-title{
+  color: #132a4a;
+  margin-bottom: 20px;
+}
+
+.home-top-text, .home-bottom-text{
+  color: #4c526a;
+  margin-bottom: 17px;
+}
+
+.home-button-top, .home-button-bottom{
+  background-color: #e1bb74;
+  color: #fffef7;
+  border: none;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight:bold ;
+
+  }
+
+.home-top-img{
+  flex-basis: 50%;
+  padding-right: 150px;
+  width: 600px !important;
+  height: 400px !important;
+}
+
+.home-button-img{
+  flex-basis: 50%;
+  padding-right: 150px;
+  width: 600px !important;
+  height: 400px !important;
+}
 
 /* end of home-page cart */
 
