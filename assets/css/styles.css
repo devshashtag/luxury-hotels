@@ -164,15 +164,15 @@ a {
 }
 
 .rooms__header {
-  background-image: url("../images/rooms/header.jpg");
+  background-image: url("/assets/images/rooms/header.jpg");
 }
 
 .facilities__header {
-  background-image: url("../images/facilities/header.jpg");
+  background-image: url("/assets/images/facilities/header.jpg");
 }
 
 .home__header {
-  background-image: url("../images/home/header.jpg");
+  background-image: url("/assets/images/home/header.jpg");
 }
 
 /** header options **/
