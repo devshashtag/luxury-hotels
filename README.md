@@ -1,8 +1,23 @@
 # info                      
-first project Luxury Hotels
+Luxury Hotels
 
-# todo 
- - [ ] make header responsive.
- - [ ] code refactoring.
- - [ ] font size issue {contact-us, rooms, and maybe home page}
+# npm scripts
+## http server
+
+*runs a **http server** on port **8000***
+
+**command**:
+```bash 
+npm run server
+```
+**output**:
+```console
+> luxury-hotels@1.0.0 server
+> python scripts/http-server.py
+
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+
+
+
 
