@@ -1,7 +1,7 @@
 {
-  "name": "reactapp",
+  "name": "luxury hotels",
   "version": "1.0.0",
-  "description": "reactapp.ir template",
+  "description": "simple css template Luxury Hotels",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevsHashtag/ReactApp.git"
+    "url": "git+https://github.com/DevsHashtag/luxury-hotels.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DevsHashtag/ReactApp/issues"
+    "url": "https://github.com/DevsHashtag/luxury-hotels/issues"
   },
-  "homepage": "https://github.com/DevsHashtag/ReactApp#readme"
+  "homepage": "https://github.com/DevsHashtag/luxury-hotels#readme"
 }
