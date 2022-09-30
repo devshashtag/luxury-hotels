@@ -1,132 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="/luxury-hotels/assets/css/styles.css" />
+    <title>Luxury Hotels</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- font awsome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <title>Luxury Hotels</title>
-</head>
+  <body>
+    <!-- rooms header -->
+    <div class="main__header home__header noselect">
+      <nav class="header__navbar">
+        <div class="nav__toggle" id="nav__toggle">
+          <div class="toggle__bar--top"></div>
+          <div class="toggle__bar--mid"></div>
+          <div class="toggle__bar--btm"></div>
+        </div>
+        <ul class="nav__list" id="nav__list">
+          <li>
+            <a class="nav__item item--active" href="/luxury-hotels">Home</a>
+          </li>
+          <li>
+            <a class="nav__item" href="/luxury-hotels/pages/facilities.html"
+              >Facilities</a
+            >
+          </li>
+          <li>
+            <a class="nav__item" href="/luxury-hotels/pages/rooms.html"
+              >Rooms</a
+            >
+          </li>
+          <li>
+            <a class="nav__item" href="/luxury-hotels/pages/contact_us.html"
+              >Contact-us</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-<body>
-  <!-- rooms header -->
-  <div class="main__header home__header noselect">
-    <nav class="header__navbar">
-      <div class="nav__toggle" id="nav__toggle">
-        <div class="toggle__bar--top"></div>
-        <div class="toggle__bar--mid"></div>
-        <div class="toggle__bar--btm"></div>
+      <div class="header__brand">
+        <div class="brand__text">LUXURY<span>HOTELS</span></div>
       </div>
-      <ul class="nav__list" id="nav__list">
-        <li><a class="nav__item item--active" href="/index.html">Home</a></li>
-        <li><a class="nav__item" href="/pages/facilities.html">Facilities</a></li>
-        <li><a class="nav__item" href="/pages/rooms.html">Rooms</a></li>
-        <li><a class="nav__item" href="/pages/contact_us.html">Contact-us</a></li>
+      <div class="header__title">
+        <div class="title--mid">WELCOME TO</div>
+        <div class="title--big">LUXURY</div>
+        <div class="title--space">HOTELS</div>
+        Book your stay and enjoy Luxury<br />
+        redefined at the most affordable rates.
+      </div>
+      <div class="header__options">
+        <button class="options__btn">
+          <i class="fa fa-calendar"></i> BOOK NOW
+        </button>
+        <div class="options__scroll">
+          Scroll
+          <button type="button"><i class="fa fa-angle-down"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- end of rooms header -->
+    <!-- main home -->
+    <div class="main__home">
+      <div class="home__title">
+        All our room types are including complementary breakfast
+      </div>
+      <div class="home__explore">
+        <div class="explore__info">
+          <h2 class="info--title">Luxury redefined</h2>
+          <p class="info--content">
+            Our rooms are designed to transport<br />
+            you into an environment made for leisure.<br />
+            Take your mind off the day-to-day of home<br />
+            life and find a private paradise for yourself.<br />
+          </p>
+          <button class="info--btn">EXPLORE</button>
+        </div>
+        <div class="explore__image">
+          <img src="/luxury-hotels/assets/images/home/rect_1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="home__explore">
+        <div class="explore__info">
+          <h2 class="info--title">Leave your worries in <br />the sand</h2>
+          <p class="info--content">
+            We love life at the beach. Being close<br />
+            to the ocean with access to endless sandy<br />
+            beach ensures a relaxed state of mind. It<br />
+            seems like time stands still watching the<br />
+            ocean.
+          </p>
+          <button class="info--btn">EXPLORE</button>
+        </div>
+        <div class="explore__image">
+          <img src="/luxury-hotels/assets/images/home/rect_2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end of main home -->
+    <!-- testimonials -->
+    <div class="testimonials">
+      <h2>testimonials</h2>
+      <h3>"Calm , Serene, Reto - What a way to relax and enjoy"</h3>
+      <p>Mr. and Mrs. Baxter, UK</p>
+      <div class="icons">
+        <div class="fas fa-chevron-left"></div>
+        <div class="fas fa-chevron-right"></div>
+      </div>
+    </div>
+
+    <!-- main footer  -->
+    <div class="main__footer">
+      <ul class="footer__item">
+        <li class="footer--brand">LUXURY<span>HOTELS</span></li>
+        <li class="footer--contactus">
+          497 Evergreen Rd. Roseville, CA 95673<br />
+          +44 345 678 903<br />
+          luxury_hotels@gmail.com<br />
+        </li>
       </ul>
-    </nav>
-
-    <div class="header__brand">
-      <div class="brand__text">LUXURY<span>HOTELS</span></div>
-    </div>
-    <div class="header__title">
-      <div class="title--mid">WELCOME TO</div>
-      <div class="title--big">LUXURY</div>
-      <div class="title--space">HOTELS</div>
-      Book your stay and enjoy Luxury<br>
-      redefined at the most affordable rates.
-    </div>
-    <div class="header__options">
-      <button class="options__btn">
-        <i class="fa fa-calendar"></i> BOOK NOW
-      </button>
-      <div class="options__scroll">
-        Scroll
-        <button type="button"><i class="fa fa-angle-down"></i></button>
+      <ul class="footer__item footer__links">
+        <li><a href="#">About Us </a></li>
+        <li><a href="#">Contact </a></li>
+        <li><a href="#">Terms & Conditionse</a></li>
+      </ul>
+      <ul class="footer__item footer__social">
+        <li>
+          <a href="#"><i class="fab fa-facebook"> </i>Facebook</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"> </i>Twitter</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        </li>
+      </ul>
+      <div class="footer__item footer__subscribe">
+        <p class="subscribe__title">Subscribe to our newsletter</p>
+        <form class="subscribe__form">
+          <input
+            class="sub__form--email"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input class="sub__form--submit" type="submit" value="OK" />
+        </form>
       </div>
     </div>
-  </div>
-  <!-- end of rooms header -->
-  <!-- main home -->
-  <div class="main__home">
-    <div class="home__title">All our room types are including complementary breakfast</div>
-    <div class="home__explore">
-      <div class="explore__info">
-        <h2 class="info--title">Luxury redefined</h2>
-        <p class="info--content">
-          Our rooms are designed to transport<br>
-          you into an environment made for leisure.<br>
-          Take your mind off the day-to-day of home<br>
-          life and find a private paradise for yourself.<br>
-        </p>
-        <button class="info--btn">EXPLORE</button>
-      </div>
-      <div class="explore__image">
-        <img src="/assets/images/home/rect_1.jpg" alt="">
-      </div>
-    </div>
-    <div class="home__explore">
-      <div class="explore__info">
-        <h2 class="info--title">Leave your worries in <br>the sand</h2>
-        <p class="info--content">
-          We love life at the beach. Being close<br>
-          to the ocean with access to endless sandy<br>
-          beach ensures a relaxed state of mind. It<br>
-          seems like time stands still watching the<br>
-          ocean.
-        </p>
-        <button class="info--btn">EXPLORE</button>
-      </div>
-      <div class="explore__image">
-        <img src="/assets/images/home/rect_2.jpg" alt="">
-      </div>
-    </div>
-  </div>
-  <!-- end of main home -->
-  <!-- testimonials -->
-  <div class="testimonials">
-    <h2>testimonials</h2>
-    <h3>"Calm , Serene, Reto - What a way to relax and enjoy"</h3>
-    <p>Mr. and Mrs. Baxter, UK</p>
-    <div class="icons">
-      <div class="fas fa-chevron-left"></div>
-      <div class="fas fa-chevron-right"></div>
-    </div>
-  </div>
-
-  <!-- main footer  -->
-  <div class="main__footer">
-    <ul class="footer__item">
-      <li class="footer--brand">LUXURY<span>HOTELS</span></li>
-      <li class="footer--contactus">
-        497 Evergreen Rd. Roseville, CA 95673<br>
-        +44 345 678 903<br>
-        luxury_hotels@gmail.com<br>
-      </li>
-    </ul>
-    <ul class="footer__item footer__links">
-      <li><a href="#">About Us </a></li>
-      <li><a href="#">Contact </a></li>
-      <li><a href="#">Terms & Conditionse</a></li>
-    </ul>
-    <ul class="footer__item footer__social">
-      <li><a href="#"><i class="fab fa-facebook"> </i>Facebook</a></li>
-      <li><a href="#"><i class="fab fa-twitter"> </i>Twitter</a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-    </ul>
-    <div class="footer__item footer__subscribe">
-      <p class="subscribe__title">Subscribe to our newsletter</p>
-      <form class="subscribe__form">
-        <input class="sub__form--email" type="email" name="email" placeholder="Email Address" required>
-        <input class="sub__form--submit" type="submit" value="OK">
-      </form>
-    </div>
-  </div>
-  <!-- end of main footer  -->
-  <!-- scripts -->
-  <script src="/assets/js/app.js"></script>
-</body>
-
+    <!-- end of main footer  -->
+    <!-- scripts -->
+    <script src="/luxury-hotels/assets/js/app.js"></script>
+  </body>
 </html>
