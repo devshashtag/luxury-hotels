@@ -1,100 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Luxury Hotels /contact-us</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <title>Luxury Hotels /contact-us</title>
-</head>
+  <body>
+    <!-- contact header -->
+    <div class="main__header contact__header noselect">
+      <nav class="header__navbar">
+        <div class="nav__toggle" id="nav__toggle">
+          <div class="toggle__bar--top"></div>
+          <div class="toggle__bar--mid"></div>
+          <div class="toggle__bar--btm"></div>
+        </div>
+        <ul class="nav__list" id="nav__list">
+          <li><a class="nav__item" href="/index.html">Home</a></li>
+          <li><a class="nav__item" href="facilities.html">Facilities</a></li>
+          <li><a class="nav__item" href="rooms.html">Rooms</a></li>
+          <li><a class="nav__item item--active" href="contact_us.html">Contact-us</a></li>
+        </ul>
+      </nav>
 
-<body>
-  <!-- contact header -->
-  <div class="main__header contact__header noselect">
-    <nav class="header__navbar">
-      <div class="nav__toggle" id="nav__toggle">
-        <div class="toggle__bar--top"></div>
-        <div class="toggle__bar--mid"></div>
-        <div class="toggle__bar--btm"></div>
+      <div class="header__brand">
+        <div class="brand__text">LUXURY<span>HOTELS</span></div>
       </div>
-      <ul class="nav__list" id="nav__list">
-        <li><a class="nav__item" href="/index.html">Home</a></li>
-        <li><a class="nav__item" href="facilities.html">Facilities</a></li>
-        <li><a class="nav__item" href="rooms.html">Rooms</a></li>
-        <li><a class="nav__item item--active" href="contact_us.html">Contact-us</a></li>
+      <h2 class="contact__header__title">CONTACT-US</h2>
+    </div>
+    <!-- end of contact header -->
+    <!-- main content  -->
+    <div class="contact__main">
+      <h1 class="contact__title">WE ARE HERE FOR YOU</h1>
+      <p class="contact__paragraph">
+        At Luxury Hotels, we take our customers seriously. Do you have any enquiries, compaints or requests,<br />
+        please forward it to our support desk and we will get back to you as soon as possible.
+      </p>
+      <div class="contact__comments">
+        <div class="comments__info">
+          497 Evergreen Rd. Roseville,<br />
+          CA 95673<br /><br />
+          <span>View map ---></span>
+          <br /><br />
+          Phone: +44 345 678 903<br />
+          Email: luxury_hotels@gmail.com<br />
+        </div>
+        <form class="comments__form" action="" method="post" accept-charset="utf-8">
+          <label for="name">Name</label>
+          <input class="cmt__form--name" type="text" name="name" id="name" />
+          <label for="email">Email Address</label>
+          <input class="cmt__form--email" type="email" name="email" id="email" />
+          <label for="message">Message</label>
+          <textarea class="cmt__form--msg" name="message" id="message" rows="14" cols="30"></textarea>
+          <input class="cmt__form--submit" type="submit" name="submit" id="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+    <!-- end of main content  -->
+    <!-- main footer  -->
+    <div class="main__footer">
+      <ul class="footer__item">
+        <li class="footer--brand">LUXURY<span>HOTELS</span></li>
+        <li class="footer--contactus">
+          497 Evergreen Rd. Roseville, CA 95673<br />
+          +44 345 678 903<br />
+          luxury_hotels@gmail.com<br />
+        </li>
       </ul>
-    </nav>
-
-    <div class="header__brand">
-      <div class="brand__text">LUXURY<span>HOTELS</span></div>
-    </div>
-    <h2 class="contact__header__title">CONTACT-US</h2>
-  </div>
-  <!-- end of contact header -->
-  <!-- main content  -->
-  <div class="contact__main">
-    <h1 class="contact__title"> WE ARE HERE FOR YOU </h1>
-    <p class="contact__paragraph">
-      At Luxury Hotels, we take our customers seriously.
-      Do you have any enquiries, compaints or requests,<br>
-      please forward it to our support desk and we will
-      get back to you as soon as possible.
-    </p>
-    <div class="contact__comments">
-      <div class="comments__info">
-        497 Evergreen Rd. Roseville,<br>
-        CA 95673<br><br>
-        <span>View map ---></span>
-        <br><br>
-        Phone: +44 345 678 903<br>
-        Email: luxury_hotels@gmail.com<br>
+      <ul class="footer__item footer__links">
+        <li><a href="#">About Us </a></li>
+        <li><a href="#">Contact </a></li>
+        <li><a href="#">Terms & Conditionse</a></li>
+      </ul>
+      <ul class="footer__item footer__social">
+        <li>
+          <a href="#"><i class="fab fa-facebook"> </i>Facebook</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"> </i>Twitter</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        </li>
+      </ul>
+      <div class="footer__item footer__subscribe">
+        <p class="subscribe__title">Subscribe to our newsletter</p>
+        <form class="subscribe__form">
+          <input class="sub__form--email" type="email" name="email" placeholder="Email Address" required />
+          <input class="sub__form--submit" type="submit" value="OK" />
+        </form>
       </div>
-      <form class="comments__form" action="" method="post" accept-charset="utf-8">
-        <label for="name">Name</label>
-        <input class="cmt__form--name" type="text" name="name" id="name" />
-        <label for="email">Email Address</label>
-        <input class="cmt__form--email" type="email" name="email" id="email" />
-        <label for="message">Message</label>
-        <textarea class="cmt__form--msg"  name="message" id="message" rows="14" cols="30"></textarea>
-        <input class="cmt__form--submit" type="submit" name="submit" id="submit" value="submit" />
-      </form>
     </div>
-  </div>
-  <!-- end of main content  -->
-  <!-- main footer  -->
-  <div class="main__footer">
-    <ul class="footer__item">
-      <li class="footer--brand">LUXURY<span>HOTELS</span></li>
-      <li class="footer--contactus">
-        497 Evergreen Rd. Roseville, CA 95673<br>
-        +44 345 678 903<br>
-        luxury_hotels@gmail.com<br>
-      </li>
-    </ul>
-    <ul class="footer__item footer__links">
-      <li><a href="#">About Us </a></li>
-      <li><a href="#">Contact </a></li>
-      <li><a href="#">Terms & Conditionse</a></li>
-    </ul>
-    <ul class="footer__item footer__social">
-      <li><a href="#"><i class="fab fa-facebook"> </i>Facebook</a></li>
-      <li><a href="#"><i class="fab fa-twitter"> </i>Twitter</a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-    </ul>
-    <div class="footer__item footer__subscribe">
-      <p class="subscribe__title">Subscribe to our newsletter</p>
-      <form class="subscribe__form">
-        <input class="sub__form--email" type="email" name="email" placeholder="Email Address" required>
-        <input class="sub__form--submit" type="submit" value="OK">
-      </form>
-    </div>
-  </div>
-  <!-- end of main footer  -->
-  <!-- scripts -->
-  <script src="/assets/js/app.js"></script>
-</body>
-
+    <!-- end of main footer  -->
+    <!-- scripts -->
+    <script src="/assets/js/script.js"></script>
+  </body>
 </html>

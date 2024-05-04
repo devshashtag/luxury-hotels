@@ -4,7 +4,7 @@
 
 /* variables */
 :root {
-  --primary-color: #14274A;
+  --primary-color: #14274a;
   --secondary-color: #e0b973;
   --white-color-1: #ffffff;
   --white-color-2: #f7f7f7;
@@ -27,7 +27,7 @@
   --nav-list-active-fg: #88ffff;
 
   /* header options */
-  --header-options-btn-bg: #E0B973;
+  --header-options-btn-bg: #e0b973;
 
   /* contact-us form */
   --contact-form-text-border: #9d9d9d;
@@ -164,15 +164,15 @@ a {
 }
 
 .rooms__header {
-  background-image: url("/assets/images/rooms/header.jpg");
+  background-image: url('/assets/images/rooms/header.jpg');
 }
 
 .facilities__header {
-  background-image: url("/assets/images/facilities/header.jpg");
+  background-image: url('/assets/images/facilities/header.jpg');
 }
 
 .home__header {
-  background-image: url("/assets/images/home/header.jpg");
+  background-image: url('/assets/images/home/header.jpg');
 }
 
 /** header options **/
@@ -278,16 +278,16 @@ a {
   background-color: var(--nav-toggle-bg);
 }
 
-.on > .toggle__bar--top {
+.active > .toggle__bar--top {
   -webkit-transform: rotate(-45deg) translate(-8px, 8px);
   transform: rotate(-40deg) translate(-5px, 5px);
 }
 
-.on > .toggle__bar--mid {
+.active > .toggle__bar--mid {
   opacity: 0;
 }
 
-.on > .toggle__bar--btm {
+.active > .toggle__bar--btm {
   -webkit-transform: rotate(45deg) translate(-8px, -7px);
   transform: rotate(40deg) translate(-5px, -5px);
 }
@@ -313,7 +313,7 @@ a {
 }
 
 .nav__item::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   right: 0;
@@ -712,44 +712,44 @@ a {
 /* end of contact-page */
 
 /* testimonial */
- .testimonials {
-   text-align: center;
-   color: #14274a;
-   margin-bottom: 6rem;
- }
+.testimonials {
+  text-align: center;
+  color: #14274a;
+  margin-bottom: 6rem;
+}
 
- .testimonials h2 {
-   font-size: 3.3rem;
-   text-transform: capitalize;
-   margin: 6rem 0 2rem;
- }
+.testimonials h2 {
+  font-size: 3.3rem;
+  text-transform: capitalize;
+  margin: 6rem 0 2rem;
+}
 
- .testimonials h3 {
-   font-size: 1.7rem;
-   margin-bottom: 1rem;
- }
+.testimonials h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
 
- .testimonials p {
-   font-size: 1.8rem;
-   font-family: sans-serif;
-   margin-bottom: 1rem;
- }
+.testimonials p {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+}
 
- .testimonials .icons {
-   margin: 0 46%;
-   display: flex;
-   justify-content: space-around;
-   gap: 1.5rem;
- }
+.testimonials .icons {
+  margin: 0 46%;
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
 
- .testimonials .icons .fas {
-   background: #e0b973;
-   color: #fff;
-   padding: 0.6rem 1rem;
-   font-size: 1.8rem;
-   border-radius: 0.5rem;
-   cursor: pointer;
- }
+.testimonials .icons .fas {
+  background: #e0b973;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
 /* end of testimonial */
 
 /* footer */
@@ -770,7 +770,7 @@ a {
 }
 
 .main__footer::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -33px;
   left: 0;
@@ -913,7 +913,7 @@ a {
   }
   /* main home */
   .home__explore {
-    width:80vw;
+    width: 80vw;
   }
 }
 
@@ -958,7 +958,7 @@ a {
     display: flex;
   }
 
-  .nav__list.show {
+  .nav__list.active {
     display: flex;
     background-color: var(--nav-list-bg);
   }
@@ -1048,7 +1048,6 @@ a {
     padding: 1.4rem;
   }
   /* end of main home */
-
 }
 
 @media screen and (max-width: 450px) {
@@ -1076,7 +1075,7 @@ a {
     font-size: 1.5rem;
   }
 
-  .info--title  {
+  .info--title {
     font-size: 1.9rem;
   }
 
@@ -1091,5 +1090,4 @@ a {
     border-radius: 0;
   }
   /* end of main home */
-
 }
