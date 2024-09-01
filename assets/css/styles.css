@@ -59,7 +59,7 @@
   outline: none;
   background: none;
   border: none;
-  transition: 0.3s ease;
+  transition: 0.2s linear;
 }
 
 a {
@@ -164,15 +164,15 @@ a {
 }
 
 .rooms__header {
-  background-image: url('/assets/images/rooms/header.jpg');
+  background-image: url('/assets/images/rooms/header.webp');
 }
 
 .facilities__header {
-  background-image: url('/assets/images/facilities/header.jpg');
+  background-image: url('/assets/images/facilities/header.webp');
 }
 
 .home__header {
-  background-image: url('/assets/images/home/header.jpg');
+  background-image: url('/assets/images/home/header.webp');
 }
 
 /** header options **/
